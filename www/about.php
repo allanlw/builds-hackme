@@ -40,22 +40,22 @@
       <p>Website - <a href="http://allanwirth.com/">allanwirth.com</a></p>
       <img src="/images/allan.jpg" />
       <p>What else would you want to know?!</p>
-<?
+<?php
 $counter_file = "/tmp/visitor_counter.txt";
 $x = file_get_contents($counter_file);
 $x += 1;
 file_put_contents($counter_file, $x);
 ?>
       <p>You are the <?=$x;?>th visitor to this page.
-<?
+<?php
 if ($x % 1000 == 0) {
 ?>
       Congrats, here's your prize: KEY{999ProblemsButAReloadAint1}</p>
-<?
+<?php
 } else {
 ?>
       Every thousandth visitor gets a prize.</p>
-<?
+<?php
 }
 ?>
     </div> <!-- /container -->

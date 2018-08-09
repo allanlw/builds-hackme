@@ -64,7 +64,7 @@ if (isset($_GET['captcha'])) {
   }
   file_put_contents("/tmp/solved_".$name.".txt", $solved);
   ?>
-  <p>Solved <?php=$solved?> captchas</p> <?php
+  <p>Solved <?=$solved?> captchas</p> <?php
 }
 ?>
 <p>Copy this value to the field below:</p>
